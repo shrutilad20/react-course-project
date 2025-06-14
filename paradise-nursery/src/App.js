@@ -1,13 +1,15 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Landing from './pages/landinganding';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Landing from './pages/landing';
 import ProductListing from './pages/productlisting';
 import CartPage from './pages/cartpage';
+import Header from './components/header';
 
-const App = () => {
+function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/products" element={<ProductListing />} />
@@ -15,6 +17,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;

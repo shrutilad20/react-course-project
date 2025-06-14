@@ -1,0 +1,34 @@
+/* landing.css */
+.landing-page {
+  background-image: url('D:\projects\react-course-project\paradise-nursery\public\images\land.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.landing-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.landing-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background: #88c9bf;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+
+}

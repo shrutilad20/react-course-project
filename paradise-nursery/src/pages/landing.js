@@ -1,17 +1,18 @@
-// src/pages/Landing.js
+// landing.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './landing.css'; // create this separately
 
 const Landing = () => {
   return (
     <div className="landing-page">
-      <h1>Paradise Nursery</h1>
-      <p>Welcome to Paradise Nursery, your one-stop-shop for beautiful houseplants.</p>
-      <img src="/logo512.png" alt="nursery" width="200" />
-      <br />
-      <Link to="/products">
-        <button>Get Started</button>
-      </Link>
+      <div className="landing-content">
+        <h1>Paradise Nursery</h1>
+        <p>Discover and shop beautiful houseplants for your home.</p>
+        <Link to="/products">
+          <button>Get Started</button>
+        </Link>
+      </div>
     </div>
   );
 };
